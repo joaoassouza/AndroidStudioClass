@@ -2,6 +2,8 @@ package com.example.androidclass;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +23,11 @@ public class ViewExer2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView editTextn1 = findViewById(R.id.textViewNumero1);
+        TextView ediTextn2 = findViewById(R.id.textViewNumero2);
+        
+
     }
 
     public void voltar(View view){finish();}

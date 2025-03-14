@@ -26,7 +26,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exercicio 2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="54dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewNumero2"
+        android:layout_width="157dp"
+        android:layout_height="24dp"
+        android:text="Insira o segundo número"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewNumero1"
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="148dp"
+        android:text="Insira o primeiro número"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNumero2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnSomar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="334dp"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
