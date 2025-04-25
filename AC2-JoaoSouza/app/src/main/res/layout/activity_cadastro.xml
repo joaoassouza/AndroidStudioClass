@@ -5,21 +5,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Cadastro">
 
-    <ListView
-        android:id="@+id/ListViewExercicios"
-        android:layout_width="290dp"
-        android:layout_height="274dp"
+    <Button
+        android:id="@+id/btnChangeViewBackMain"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:background="#673AB7"
+        app:icon="?attr/actionModeCloseDrawable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.934"
+        app:rippleColor="#2196F3" />
 
     <TextView
-        android:id="@+id/TitleMain"
+        android:id="@+id/titleCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AC2 João Souza"
@@ -29,63 +32,55 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043" />
 
-
     <TextView
-        android:id="@+id/TxtViewTreino"
+        android:id="@+id/title2Cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AGACHAMENTO"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
-
-    <TextView
-        android:id="@+id/txtViewTimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="01:30"
-        android:textSize="40sp"
+        android:text="Cadastre um novo exercício"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.163" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <Button
-        android:id="@+id/btnIniciarTreino"
+        android:id="@+id/btnSalvarExercicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#673AB7"
-        android:text="INICIAR TREINO"
-        app:icon="@android:drawable/ic_media_play"
+        android:text="Salvar Exercício"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.626" />
+
+    <EditText
+        android:id="@+id/EditTextTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Duração em minutos"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847"
-        app:rippleColor="#2196F3" />
+        app:layout_constraintVertical_bias="0.36" />
 
-    <Button
-        android:id="@+id/btnChangeView"
-        android:layout_width="62dp"
-        android:layout_height="51dp"
-        android:background="#673AB7"
-        app:icon="@android:drawable/ic_input_add"
+    <EditText
+        android:id="@+id/editTextNomeExer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome do exercício"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934"
-        app:rippleColor="#2196F3" />
-
-    <EditText/>
+        app:layout_constraintVertical_bias="0.259" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
