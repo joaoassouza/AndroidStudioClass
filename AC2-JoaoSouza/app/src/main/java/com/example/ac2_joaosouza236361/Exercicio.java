@@ -3,7 +3,7 @@ package com.example.ac2_joaosouza236361;
 public class Exercicio {
 
     private String nome;
-    private int duracao;
+    private int tempo;
 
     public String getNome() {
         return nome;
@@ -13,12 +13,12 @@ public class Exercicio {
         this.nome = nome;
     }
 
-    public int getDuracao() {
-        return duracao;
+    public int getTempo() {
+        return tempo;
     }
 
-    public void setDuracao(int duracao) {
-        this.duracao = duracao;
+    public void setTempo(int tempo) {
+        this.tempo = tempo;
     }
 
     public Exercicio() {
@@ -26,6 +26,6 @@ public class Exercicio {
 
     public Exercicio(String nome, int duracao) {
         this.nome = nome;
-        this.duracao = duracao;
+        this.tempo = duracao;
     }
 }

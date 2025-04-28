@@ -63,7 +63,6 @@
         android:layout_height="wrap_content"
         android:background="#673AB7"
         android:text="INICIAR TREINO"
-        app:icon="@android:drawable/ic_media_play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -77,7 +76,6 @@
         android:layout_width="62dp"
         android:layout_height="51dp"
         android:background="#673AB7"
-        app:icon="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.092"
@@ -86,6 +84,5 @@
         app:layout_constraintVertical_bias="0.934"
         app:rippleColor="#2196F3" />
 
-    <EditText/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

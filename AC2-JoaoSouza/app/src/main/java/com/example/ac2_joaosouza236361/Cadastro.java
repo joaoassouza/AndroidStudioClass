@@ -24,31 +24,17 @@ public class Cadastro extends AppCompatActivity {
         btnCadastrarTreino = findViewById(R.id.btnSalvarExercicio);
         btnBackMain = findViewById(R.id.btnChangeViewBackMain);
 
-        // Listener do botão de cadastrar exercício
         btnCadastrarTreino.setOnClickListener(v -> {
             String nome = editTextNome.getText().toString();
             String tempoStr = editTextTempo.getText().toString();
 
             if (!nome.isEmpty() && !tempoStr.isEmpty()) {
                 int tempo = Integer.parseInt(tempoStr);
-
-                // Recupera lista vinda da MainActivity
-                ArrayList<Exercicio> lista = (ArrayList<Exercicio>) getIntent().getSerializableExtra("lista");
-                if (lista == null) {
-                    lista = new ArrayList<>();
-                }
-
-                lista.add(new Exercicio(nome, tempo));
-
-                // Envia de volta
-                Intent resultIntent = new Intent();
-                resultIntent.putExtra("lista", lista);
-                setResult(RESULT_OK, resultIntent);
+                ExercicioStorage.listaExercicios.add(new Exercicio(nome, tempo));
                 finish();
             }
         });
 
-        // Voltar pra tela principal (opcional)
         btnBackMain.setOnClickListener(v -> finish());
     }
 }
